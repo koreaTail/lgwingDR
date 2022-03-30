@@ -106,12 +106,13 @@ function paintDailyReport(content) {
   }
 
 }
+// 클릭시 화면 전체가 사라지는 문제가 발생하여 삭제조치, 문제는 삭제버튼이 작동안함.
+// 지우는건 아직 내 능력이 아닌걸로 판단하고.. 일단 삭제하자.
+// timeLine.addEventListener("click", deleteFunction)
 
-timeLine.addEventListener("click", deleteFunction)
-
-function deleteFunction(e){
-  e.target.parentNode.remove()
-}
+// function deleteFunction(e){
+//   e.target.parentNode.remove()
+// }
 
 
 function submitHandler(e) {
