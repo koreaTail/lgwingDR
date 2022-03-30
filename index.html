@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily & ToDo</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/6584921572.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="background-center">
+    <section class="clock-and-todo-part">
+      <section class="clock-part">
+        <div class="left-day">
+          <span class="월일">03-24</span>
+          <strong class="요일">수</strong>
+        </div>
+        <div class="right-time">
+          <div class="js-clock">
+            <h1 class="시간">00:00</h1>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="daily-part">
+      <div class="black-box">
+        <div class="start">
+          <span style="display: none">12:31</span>
+          <button class="dayStart"><span>Start</span></button>
+        </div>
+        <div class="js-daily-form">
+          <form action="">
+            <input class="didInput" type="text" placeholder="한일을 입력하세요" />
+            <!-- <button type="submit">완료</button> -->
+          </form>
+        </div>
+        <div class="timeLine"></div>
+        <div class="clear-button">
+          <button>reset</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Todo part -->
+  <script src="clock.js"></script>
+  <script src="backgroud.js"></script>
+  <script src="recordingTime.js"></script>
+  <script src="clear.js"></script>
+</body>
+
+</html>
